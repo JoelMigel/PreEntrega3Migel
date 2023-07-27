@@ -35,7 +35,7 @@
 #main_contacto{
     background-color: rgb(112, 8, 138);
     color: rgb(255, 255, 255);
-    height: 500px;
+    height: 700px;
     width: 1518px;
     margin: 0;
     display: inline-grid;
@@ -59,13 +59,16 @@
     font-family: italic;
     color: white;
     margin: 0%;
-    height: 500px;
+    height: 700px;
 }
 
 #equipos_main {
     background-color: rgb(112, 8, 138);
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#grad {
+    background-image: linear-gradient(to left,rgb(30, 126, 215), rgb(107, 215, 107));
 }
 
 main div aside{
@@ -132,6 +135,8 @@ footer div {
     height: auto;
 }
 
+
+
 figure{
  text-align: center;
 }
@@ -191,7 +196,12 @@ figure{
         display: block;
         width: 100%;
     }
-
+    #texto_historia{
+        font-size: 1.2vh;
+    }
+    #equipos_main{
+        font-size: 0.5em;
+    }
 }
 @media  screen and (max-width:480px) {
     .banner{
@@ -200,8 +210,13 @@ figure{
     main div section iframe {
         width: 70%
     }
+    #main_contacto{
+        font-size: 2vh;
+    }
+    #input_group{
+        font-size: 1.7vh;
 }
-
+}
 @media screen and (max-width: 400px) {
     .banner{
         font-size: 2vh;
@@ -213,5 +228,38 @@ figure{
         display: block;
         width: 100%;
     }
+    main img {
+        width: 200px;
+        height: 300px;
+    }
+    #equipos_main{
+        font-size: 0.3em;
+    }
 }
     
+@media screen and (max-width: 1515px) {
+    #main_contacto{
+        width: 100%;
+        font-size: 3vh;
+    }
+    #input_group{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 940px){
+    #main_contacto{
+        width: 100%;
+    }
+    #input_group{
+        min-width: 100%;
+    }
+    body{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1300px){
+    #texto_historia{
+        font-size: 1.3vh;
+        height: 800px;
+    }
+}
