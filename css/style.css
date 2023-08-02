@@ -3,25 +3,7 @@
   box-sizing: border-box;
 }
 
-#input_group {
-  background-color: rgb(30, 126, 215);
-  display: flex;
-  font-size: large;
-  height: 300px;
-  width: 1515px;
-  align-items: center;
-  justify-content: center;
-}
-@media screen and (max-width: 480px) {
-  #input_group {
-    font-size: 1.7vh;
-  }
-}
-@media screen and (max-width: 940px) {
-  #input_group {
-    min-width: 100%;
-  }
-}
+
 
 #main_principal {
   background-color: rgb(112, 8, 138);
@@ -30,26 +12,7 @@
   display: flex;
 }
 
-#main_contacto {
-  background-color: rgb(112, 8, 138);
-  color: rgb(255, 255, 255);
-  height: 700px;
-  width: 1518px;
-  margin: 0;
-  display: inline-grid;
-  text-align: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-@media screen and (max-width: 480px) {
-  #main_contacto {
-    font-size: 2vh;
-  }
-}
-@media screen and (max-width: 940px) {
-  #main_contacto {
-    width: 100%;
-  }
-}
+
 
 #historia_main {
   background-color: rgb(112, 8, 138);
