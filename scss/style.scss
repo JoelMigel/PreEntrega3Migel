@@ -1,5 +1,5 @@
 $color1: white;
-$color2: rgb(112, 8, 138);
+$color2: rgb(67, 7, 82);
 $color3: rgb(30, 126, 215);
 $color4: black;
 *{
@@ -13,11 +13,16 @@ $color4: black;
     color: white;
     height: 100%;
     display: flex;
+    text-align: center;
 }
 
 #historia_main{
-    background-color: $color2;
+    background-image: url(../images/premier_fotos/fondopl.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
     text-align: center;
+    padding: 30px;
 
 }
 #galeria_main{
@@ -33,15 +38,14 @@ $color4: black;
     color: white;
     margin: 0%;
     height: 700px;
+    font-size: 2.2vh;
     @media screen and (max-width: 800px){
-        font-size: 1.2vh;
+        font-size: 1.8vh;
     }
-    @media screen and (max-width: 1300px){
+    @media screen and (max-width: 600px){
         font-size: 1.3vh;
-        height: 800px;
-    }
 }
-
+}
 #equipos_main {
     background-color:$color2;
     color: white;
@@ -55,6 +59,7 @@ $color4: black;
 }
 #grad {
     background-image: linear-gradient(to left,rgb(30, 126, 215), rgb(107, 215, 107));
+    width: 500px;
 }
 
 #fondo{
@@ -71,7 +76,8 @@ $color4: black;
     display: grid;
     font-size: 500%;
     height: 100%;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+    font-family: 'Caveat', cursive;
     @media  screen and (max-width:480px){
         font-size: 3vh;
     }
@@ -84,6 +90,7 @@ $color4: black;
 .texto_galeria {
     font-size: large;
     text-align: center;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .galeria {
@@ -96,7 +103,7 @@ $color4: black;
     border: 4px solid #b8b3b3;
     padding: 10px;
 }
-.imagen img {
+.imagen img{
     width: 30%;
     height: auto;
 }
@@ -138,6 +145,14 @@ $color4: black;
     font-size: 1.9em;
 
 }
+.video_container{
+    display: flex;
+    justify-content: center;
+    padding: 10%;
+    @media  screen and (max-width:480px){
+        height: 400px;
+    }
+}
 
 
 
@@ -161,7 +176,7 @@ main{
     display: grid;
     font-size: 500%;
     height: 100%;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Caveat', cursive;
     @media  screen and (max-width:480px){
         font-size: 3vh;
     }
@@ -179,33 +194,42 @@ main{
     div aside{
         background-color: $color3;
     text-align: center;
-    font-size: 125%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
     padding: 15px;
     border-radius: 10px;
+    @media screen and (max-width: 800px){
+        align-items: end;
+        height: 500px;
+        width: 200px;
+        padding: 5%;
+    }
     }
     div section{
         display: flex;
     flex-direction: column;
-    padding: 20px;
-    @media screen and (max-width: 800px){
-        align-items: center;
+    font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
     }
+    aside p{
+        font-size: 20px;
+        justify-content: space-between;
+        @media screen and (max-width: 800px){
+            font-size: 15px;
+        }
     }
     img{
         padding: 1%;
-        @media screen and (max-width: 400px){
-            width: 200px;
+        @media screen and (max-width: 600px){
+            width: 400px;
             height: 300px;
+        }
+        @media  screen and (max-width:480px){
+           width: 280px;
+           height: 200px;
         }
     }
     figure{
         text-align: center;
-    }
-    iframe{
-        @media  screen and (max-width:480px) {
-            width: 70%;
-        }
     }
 }
 

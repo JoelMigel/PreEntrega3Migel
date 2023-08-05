@@ -3,24 +3,25 @@
   box-sizing: border-box;
 }
 
-
-
 #main_principal {
-  background-color: rgb(112, 8, 138);
+  background-color: rgb(67, 7, 82);
   color: white;
   height: 100%;
   display: flex;
-}
-
-
-
-#historia_main {
-  background-color: rgb(112, 8, 138);
   text-align: center;
 }
 
+#historia_main {
+  background-image: url(../images/premier_fotos/fondopl.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  padding: 30px;
+}
+
 #galeria_main {
-  background-color: rgb(112, 8, 138);
+  background-color: rgb(67, 7, 82);
   color: white;
   width: 100;
   margin: 0%;
@@ -33,21 +34,21 @@
   color: white;
   margin: 0%;
   height: 700px;
+  font-size: 2.2vh;
 }
 @media screen and (max-width: 800px) {
   #texto_historia {
-    font-size: 1.2vh;
+    font-size: 1.8vh;
   }
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 600px) {
   #texto_historia {
     font-size: 1.3vh;
-    height: 800px;
   }
 }
 
 #equipos_main {
-  background-color: rgb(112, 8, 138);
+  background-color: rgb(67, 7, 82);
   color: white;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -64,6 +65,7 @@
 
 #grad {
   background-image: linear-gradient(to left, rgb(30, 126, 215), rgb(107, 215, 107));
+  width: 500px;
 }
 
 #fondo {
@@ -71,7 +73,7 @@
 }
 
 .banner {
-  background-color: rgb(0, 0, 0);
+  background-color: black;
   color: white;
   margin: 0%;
   width: 100%;
@@ -80,7 +82,8 @@
   display: grid;
   font-size: 500%;
   height: 100%;
-  font-family: "Times New Roman", Times, serif;
+  font-size: 100px;
+  font-family: "Caveat", cursive;
 }
 @media screen and (max-width: 480px) {
   .banner {
@@ -96,6 +99,7 @@
 .texto_galeria {
   font-size: large;
   text-align: center;
+  font-family: "Quicksand", sans-serif;
 }
 
 .galeria {
@@ -141,13 +145,24 @@
 .table_title {
   grid-column-start: 1;
   grid-column-end: 5;
-  background-color: rgb(112, 8, 138);
+  background-color: rgb(67, 7, 82);
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   font-weight: bold;
   font-size: 1.9em;
+}
+
+.video_container {
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+}
+@media screen and (max-width: 480px) {
+  .video_container {
+    height: 400px;
+  }
 }
 
 body {
@@ -174,7 +189,7 @@ main h1 {
   display: grid;
   font-size: 500%;
   height: 100%;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Caveat", cursive;
 }
 @media screen and (max-width: 480px) {
   main h1 {
@@ -196,37 +211,50 @@ main h1 {
 main div aside {
   background-color: rgb(30, 126, 215);
   text-align: center;
-  font-size: 125%;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
   padding: 15px;
   border-radius: 10px;
+}
+@media screen and (max-width: 800px) {
+  main div aside {
+    align-items: end;
+    height: 500px;
+    width: 200px;
+    padding: 5%;
+  }
 }
 main div section {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  font-size: 25px;
+  font-family: "Quicksand", sans-serif;
+}
+main aside p {
+  font-size: 20px;
+  justify-content: space-between;
 }
 @media screen and (max-width: 800px) {
-  main div section {
-    align-items: center;
+  main aside p {
+    font-size: 15px;
   }
 }
 main img {
   padding: 1%;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 600px) {
   main img {
-    width: 200px;
+    width: 400px;
     height: 300px;
+  }
+}
+@media screen and (max-width: 480px) {
+  main img {
+    width: 280px;
+    height: 200px;
   }
 }
 main figure {
   text-align: center;
-}
-@media screen and (max-width: 480px) {
-  main iframe {
-    width: 70%;
-  }
 }
 
 footer {
