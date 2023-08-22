@@ -64,12 +64,13 @@
 }
 
 #grad {
-  background-image: linear-gradient(to left, rgb(30, 126, 215), rgb(107, 215, 107));
+  background-image: linear-gradient(to left, rgb(30, 126, 215), rgb(84, 22, 99));
   width: 500px;
 }
 
 #fondo {
   width: 100%;
+  height: 1200px;
 }
 
 .banner {
@@ -94,12 +95,6 @@
   .banner {
     font-size: 2vh;
   }
-}
-
-.texto_galeria {
-  font-size: large;
-  text-align: center;
-  font-family: "Quicksand", sans-serif;
 }
 
 .galeria {
@@ -221,6 +216,13 @@ main div aside {
     height: 500px;
     width: 200px;
     padding: 5%;
+  }
+}
+@media screen and (max-width: 800px) {
+  main div aside img {
+    align-items: end;
+    height: 150px;
+    width: 200px;
   }
 }
 main div section {
